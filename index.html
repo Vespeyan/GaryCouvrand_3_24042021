@@ -8,57 +8,47 @@
         <script src="https://kit.fontawesome.com/dc80972f73.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <div class="logo">
+            <div class="header__logo">
                 <img src="images/ohmyfood.png" alt="ohmyfood" class="logo_ohmyfood">
             </div>
         </header>
 
         <section id="accueil">
             <div class="localisation">
-                <div class="map_marker"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="localisation__icone"><i class="fas fa-map-marker-alt"></i></div>
                 <p>Paris, Belleville</p>
             </div>
 
             <div class="explorer">
                 <h1>Réservez le menu qui vous convient</h1>
                 <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
-                <input class="bouton_explorer" type="submit" value="Explorer nos restaurants">
+                <input class="explorer__bouton" type="submit" value="Explorer nos restaurants">
             </div>
         </section>
 
         <section id="fonctionnement">
             <h2>Fonctionnement</h2>
 
-            <div class="cadre_et_numero">
-                <div class="numero">
-                    <p>1</p>
-                </div>
-                <div class="cadre">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Choisissez un restaurant</p>
-                </div>
+            <div class="fonctionbloc">
+                <div class="fonctionbloc__numero">1</div>
+                <div class="fonctionbloc__icone"><i class="fas fa-mobile-alt"></i></div>
+                <p>Choisissez un restaurant</p>
             </div>
-            <div class="cadre_et_numero">
-                <div class="numero">
-                    <p>2</p>
-                </div>
-                <div class="cadre">
-                    <i class="fas fa-list-ul"></i>
-                    <p>Composez votre menu</p>
-                </div>
+            <div class="fonctionbloc">
+                <div class="fonctionbloc__numero">2</div>
+                <div class="fonctionbloc__icone"><i class="fas fa-list-ul"></i></div>
+                <p>Composez votre menu</p>
             </div>
-            <div class="cadre_et_numero">
-                <div class="numero">
-                    <p>3</p>
-                </div>
-                <div class="cadre">
-                    <i class="fas fa-store"></i>
-                    <p>Dégustez au restaurant</p>
-                </div>
+            <div class="fonctionbloc">
+                <div class="fonctionbloc__numero">3</div>
+                <div class="fonctionbloc__icone"><i class="fas fa-store"></i></div>
+                <p>Dégustez au restaurant</p>
             </div>
         </section>
 
@@ -69,50 +59,48 @@
                 <a href="#">
                     <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="image_restaurant">
                     <div class="nouveau">
-                        <p>Nouveau</p>
+                        <p class="nouveau__texte">Nouveau</p>
                     </div>
                 </a>
                 <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-                <i class="far fa-heart"></i>
+                <p class="ville">Ménilmontant</p>
+                <div class="restaurant__icone"><i class="far fa-heart"></i></div>
             </div>
             <div class="restaurant">
                 <a href="#">
                     <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="image_restaurant">
                     <div class="nouveau">
-                        <p>Nouveau</p>
+                        <p class="nouveau__texte">Nouveau</p>
                     </div>
                 </a>
                 <h3>La note enchantée</h3>
-                <p>Charonne</p>
-                <i class="far fa-heart"></i>
+                <p class="ville">Charonne</p>
+                <div class="restaurant__icone"><i class="far fa-heart"></i></div>
             </div>
             <div class="restaurant">
                 <a href="#">
                     <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="image_restaurant">
                 </a>
                 <h3>À la française</h3>
-                <p>Cité rouge</p>
-                <i class="far fa-heart"></i>
+                <p class="ville">Cité rouge</p>
+                <div class="restaurant__icone"><i class="far fa-heart"></i></div>
             </div>
             <div class="restaurant">
                 <a href="#">
                     <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="image_restaurant">
                 </a>
                 <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-                <i class="far fa-heart"></i>
+                <p class="ville">Folie-Méricourt</p>
+                <div class="restaurant__icone"><i class="far fa-heart"></i></div>
             </div>
         </section>
 
         <footer>
-            <div class="logo_footer">
-                <img src="images/ohmyfood.png" alt="ohmyfood" class="logo_footer_ohmyfood">
-            </div>
+            <h2>ohmyfood</h2>
 
             <ul>
-                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li><div class="icone_ustensiles"><i class="fas fa-utensils"></i></div>Proposer un restaurant</li>
+                <li><div class="icone_partenaire"><i class="fas fa-hands-helping"></i></div>Devenir partenaire</li>
                 <li>Mentions légales</li>
                 <li>Contact</li>
             </ul>

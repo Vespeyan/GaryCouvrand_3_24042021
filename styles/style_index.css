@@ -1,10 +1,14 @@
 * {
-  overflow: scroll;
+  list-style: none;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 header {
@@ -34,7 +38,7 @@ header .logo_ohmyfood {
           justify-content: center;
 }
 
-.localisation .map_marker {
+.localisation__icone {
   font-size: 1em;
   margin-top: 15px;
   margin-right: 15px;
@@ -47,6 +51,7 @@ header .logo_ohmyfood {
 
 .explorer {
   height: 300px;
+  background-color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +62,7 @@ header .logo_ohmyfood {
 }
 
 .explorer h1 {
-  font-weight: 800;
+  font-weight: 700;
   margin-top: 35px;
   margin-right: 50px;
   margin-left: 50px;
@@ -73,7 +78,7 @@ header .logo_ohmyfood {
   text-align: center;
 }
 
-.explorer .bouton_explorer {
+.explorer .explorer__bouton {
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
@@ -89,5 +94,148 @@ header .logo_ohmyfood {
   border-radius: 30px;
   -webkit-box-shadow: 3px 7px 3px #eaeaea;
           box-shadow: 3px 7px 3px #eaeaea;
+}
+
+#fonctionnement {
+  margin-top: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.fonctionbloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  display: flex;
+  background-color: #F2F2F2;
+  -webkit-box-shadow: 3px 4px 7px #e7e7e7;
+          box-shadow: 3px 4px 7px #e7e7e7;
+  border-radius: 20px;
+  height: 70px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.fonctionbloc__icone {
+  color: grey;
+  font-size: 18px;
+  margin-top: 24px;
+  margin-left: 30px;
+}
+
+.fonctionbloc p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 26px;
+}
+
+.fonctionbloc__numero {
+  font-size: 14px;
+  margin-top: 24px;
+  margin-left: -10px;
+  height: 10px;
+  width: 10px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding-top: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 10px;
+}
+
+#restaurants {
+  background-color: #F2F2F2;
+  width: 100%;
+  margin-top: 75px;
+  padding-top: 30px;
+}
+
+#restaurants h2 {
+  margin-left: 20px;
+}
+
+.restaurant {
+  background-color: white;
+  width: 330px;
+  height: 250px;
+  max-height: 250px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.restaurant .nouveau {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 30px;
+  line-height: 3px;
+  width: 85px;
+  background-color: #99E2D0;
+}
+
+.restaurant .nouveau__texte {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #278870;
+}
+
+.restaurant h3 {
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.ville {
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+.restaurant__icone {
+  float: right;
+  margin-top: -55px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.image_restaurant {
+  width: 100%;
+  height: 70%;
+}
+
+footer {
+  background-color: #2e2c2c;
+  color: white;
+  height: 45vw;
+  padding-top: 10px;
+}
+
+footer h2 {
+  font-size: 17px;
+  font-weight: normal;
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  margin-left: 30px;
+}
+
+.icone_ustensiles {
+  font-size: 14px;
+  float: left;
+  margin-right: 10px;
+}
+
+.icone_partenaire {
+  font-size: 11px;
+  float: left;
+  margin-right: 9px;
+}
+
+footer li {
+  margin-left: -10px;
+  margin-bottom: 7px;
 }
 /*# sourceMappingURL=style_index.css.map */
