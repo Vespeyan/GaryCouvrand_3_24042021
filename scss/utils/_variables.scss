@@ -1,4 +1,8 @@
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
-$couleur-fond: #F2F2F2;
+$couleur-fond: #fffbfb;
+
+@mixin ombre{
+    box-shadow: 5px 2px 18px #bdbdbd;
+}
