@@ -58,16 +58,30 @@ main h1 {
     font-weight: normal;
     font-size: 28px;
 }
-.restaurant__icone {
-    font-size: 23px;
-    font-weight: lighter;
-    margin-top: -50px;
-    margin-left: 290px;
-}
+
 .titre_et_icone {
     margin-left: auto;
     margin-right: auto;
     width: 320px;
+}
+.favoris {
+    float: right;
+    color: black;
+    font-size: 23px;
+    margin-top: -62px;
+    margin-right: -10px;
+}
+.favoris .fas {
+    font-size: 23px;
+    background: -webkit-linear-gradient($couleur-secondaire, $couleur-primaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-in-out;
+    transform: scale(0)
+}
+
+.favoris:hover .fas {
+    transform: scale(1.2)
 }
 #menus {
     display: flex;
@@ -95,6 +109,38 @@ main h1 {
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+    animation: delai 1s ease-in-out forwards;
+    transform: scale(0);
+}
+.delai_1 {
+    animation-delay: 0.1s;
+}
+.delai_2 {
+    animation-delay: 0.2s;
+}
+.delai_3 {
+    animation-delay: 0.3s;
+}
+.delai_4 {
+    animation-delay: 0.4s;
+}
+.delai_5 {
+    animation-delay: 0.5s;
+}
+.delai_6 {
+    animation-delay: 0.6s;
+}
+.delai_7 {
+    animation-delay: 0.7s;
+}
+.delai_8 {
+    animation-delay: 0.8s;
+}
+.delai_9 {
+    animation-delay: 0.9s;
+}
+.delai_10 {
+    animation-delay: 1s;
 }
 .contenu {
     transition: width;
@@ -110,6 +156,33 @@ main h1 {
     flex : 1 1 0px;
     padding-left: 1.5%;
     padding-right: 1.5%;
+}
+.categorie_2 {
+    flex : 1 1 0px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    animation: delai 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    transform: scale(0);
+}
+.categorie_3 {
+    flex : 1 1 0px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    animation: delai 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+    transform: scale(0);
+}
+
+@keyframes delai {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 .confirmation {
     margin-right: -80px;
@@ -183,8 +256,12 @@ main h1 {
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 30px;
-    box-shadow: 3px 7px 3px rgb(234, 234, 234);
+    box-shadow: 2px 5px 3px rgb(226, 224, 224);
     margin-top: 50px;
+}
+.commander:hover {
+    background: linear-gradient(to bottom right, lighten($couleur-secondaire, 5%), lighten($couleur-primaire, 5%));
+    box-shadow: 3px 7px 3px rgb(226, 224, 224);
 }
 footer {
     background-color: rgb(46, 44, 44);

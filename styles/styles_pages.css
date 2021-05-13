@@ -66,17 +66,34 @@ main h1 {
   font-size: 28px;
 }
 
-.restaurant__icone {
-  font-size: 23px;
-  font-weight: lighter;
-  margin-top: -50px;
-  margin-left: 290px;
-}
-
 .titre_et_icone {
   margin-left: auto;
   margin-right: auto;
   width: 320px;
+}
+
+.favoris {
+  float: right;
+  color: black;
+  font-size: 23px;
+  margin-top: -62px;
+  margin-right: -10px;
+}
+
+.favoris .fas {
+  font-size: 23px;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.favoris:hover .fas {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #menus {
@@ -117,6 +134,60 @@ main h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation: delai 1s ease-in-out forwards;
+          animation: delai 1s ease-in-out forwards;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.delai_1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.delai_2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delai_3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delai_4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delai_5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delai_6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delai_7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delai_8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delai_9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.delai_10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .contenu {
@@ -142,6 +213,60 @@ main h1 {
           flex: 1 1 0px;
   padding-left: 1.5%;
   padding-right: 1.5%;
+}
+
+.categorie_2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  -webkit-animation: delai 1.5s ease-in-out forwards;
+          animation: delai 1.5s ease-in-out forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.categorie_3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  -webkit-animation: delai 1.5s ease-in-out forwards;
+          animation: delai 1.5s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+@-webkit-keyframes delai {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes delai {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .confirmation {
@@ -230,9 +355,16 @@ main h1 {
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 30px;
-  -webkit-box-shadow: 3px 7px 3px #eaeaea;
-          box-shadow: 3px 7px 3px #eaeaea;
+  -webkit-box-shadow: 2px 5px 3px #e2e0e0;
+          box-shadow: 2px 5px 3px #e2e0e0;
   margin-top: 50px;
+}
+
+.commander:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  -webkit-box-shadow: 3px 7px 3px #e2e0e0;
+          box-shadow: 3px 7px 3px #e2e0e0;
 }
 
 footer {
