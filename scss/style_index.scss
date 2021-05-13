@@ -132,17 +132,18 @@ header {
     margin-left: 15px;
 }
 .fonctionbloc {
+    margin-right: auto;
     display: flex;
-    width: 350;
+    width: 95%;
     max-width: 350px;
-    min-width: 320px;
+    min-width: 280px;
     display: flex;
     background-color: $couleur-fond;
     box-shadow: 3px 4px 7px rgb(231, 231, 231);
     border-radius: 20px;
     height: 70px;
     margin-bottom: 15px;
-    margin-left: 15px;
+    margin-left: auto;
 }
 .fonctionbloc:hover .fonctionbloc__icone {
     color: $couleur-primaire
@@ -189,7 +190,7 @@ header {
     background-color: white;
     width: 90vw;
     max-width: 370px;
-    min-width: 340px;
+    min-width: 320px;
     height: 270px;
     max-height: 270px;
     margin-bottom: 20px;
@@ -198,6 +199,8 @@ header {
     border-radius: 20px;
     box-shadow: 5px 2px 18px rgb(189, 189, 189);
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     .nouveau {
         position: absolute;
         top: 5%;
@@ -303,7 +306,7 @@ footer li {
     #fonctionnement {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         margin-top: -50px;
         margin-left: 0;
         margin-right: 0;
