@@ -117,6 +117,7 @@ main h1 {
 }
 
 .menu {
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: white;
@@ -126,14 +127,11 @@ main h1 {
   height: 65px;
   width: 100%;
   max-width: 450px;
-  min-width: 300px;
+  min-width: 330px;
   margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-animation: delai 1s ease-in-out forwards;
           animation: delai 1s ease-in-out forwards;
   -webkit-transform: scale(0);
@@ -204,10 +202,10 @@ main h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
-.categorie {
+.categorie_1 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
@@ -221,12 +219,6 @@ main h1 {
           flex: 1 1 0px;
   padding-left: 1.5%;
   padding-right: 1.5%;
-  -webkit-animation: delai 1.5s ease-in-out forwards;
-          animation: delai 1.5s ease-in-out forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 .categorie_3 {
@@ -235,12 +227,6 @@ main h1 {
           flex: 1 1 0px;
   padding-left: 1.5%;
   padding-right: 1.5%;
-  -webkit-animation: delai 1.5s ease-in-out forwards;
-          animation: delai 1.5s ease-in-out forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 @-webkit-keyframes delai {
@@ -270,10 +256,10 @@ main h1 {
 }
 
 .confirmation {
-  margin-right: -80px;
+  margin-right: -60px;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  width: 80px;
+  width: 60px;
   background-color: #99E2D0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +272,7 @@ main h1 {
 }
 
 .confirmation__icone {
+  font-size: 10px;
   border-radius: 50%;
   background-color: white;
   color: #99E2D0;

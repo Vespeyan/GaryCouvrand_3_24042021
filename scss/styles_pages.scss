@@ -97,6 +97,7 @@ main h1 {
     padding-bottom: 3px;
 }
 .menu {
+    font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: white;
@@ -105,10 +106,9 @@ main h1 {
     height: 65px;
     width: 100%;
     max-width: 450px;
-    min-width: 300px;
+    min-width: 330px;
     margin-bottom: 15px;
     display: flex;
-    justify-content: space-between;
     animation: delai 1s ease-in-out forwards;
     transform: scale(0);
 }
@@ -150,9 +150,9 @@ main h1 {
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 8px;
 }
-.categorie {
+.categorie_1 {
     flex : 1 1 0px;
     padding-left: 1.5%;
     padding-right: 1.5%;
@@ -161,17 +161,11 @@ main h1 {
     flex : 1 1 0px;
     padding-left: 1.5%;
     padding-right: 1.5%;
-    animation: delai 1.5s ease-in-out forwards;
-    animation-delay: 0.5s;
-    transform: scale(0);
 }
 .categorie_3 {
     flex : 1 1 0px;
     padding-left: 1.5%;
     padding-right: 1.5%;
-    animation: delai 1.5s ease-in-out forwards;
-    animation-delay: 1s;
-    transform: scale(0);
 }
 
 @keyframes delai {
@@ -185,9 +179,9 @@ main h1 {
     }
 }
 .confirmation {
-    margin-right: -80px;
+    margin-right: -60px;
     transition-duration: 0.5s;
-    width: 80px;
+    width: 60px;
     background-color: $couleur-tertiaire;
     display: flex;
     justify-content: center;
@@ -195,6 +189,7 @@ main h1 {
     border-bottom-right-radius: 15px;
 }
 .confirmation__icone {
+    font-size: 10px;
     border-radius: 50%;
     background-color: white;
     color: $couleur-tertiaire;
@@ -239,6 +234,8 @@ main h1 {
 }
 .menu:hover .confirmation__icone {
     transform: rotate(0);
+}
+.menu:hover > .contenu {
 }
 
 .commander {
