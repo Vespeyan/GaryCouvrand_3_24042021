@@ -340,7 +340,7 @@ header .logo_ohmyfood {
   display: flex;
   width: 350;
   max-width: 350px;
-  min-width: 350px;
+  min-width: 320px;
   display: flex;
   background-color: #fffbfb;
   -webkit-box-shadow: 3px 4px 7px #e7e7e7;
