@@ -32,7 +32,7 @@ header h1 {
   color: black;
   width: 50px;
   position: relative;
-  top: 5px;
+  top: 12px;
   left: 20px;
   padding-top: 8px;
   font-size: 18px;
@@ -397,6 +397,10 @@ footer h2 {
 footer li {
   margin-left: -10px;
   margin-bottom: 7px;
+}
+
+footer a {
+  color: white;
 }
 
 @media all and (min-width: 650px) {
