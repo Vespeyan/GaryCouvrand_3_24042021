@@ -48,8 +48,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
     position: relative;
     padding-bottom: 50px;
 }
@@ -97,7 +95,7 @@ main h1 {
     padding-bottom: 3px;
 }
 .menu {
-    font-size: 14px;
+    font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: white;
@@ -105,8 +103,7 @@ main h1 {
     border-radius: 15px;
     height: 65px;
     width: 100%;
-    max-width: 450px;
-    min-width: 330px;
+    min-width: 280px;
     margin-bottom: 15px;
     display: flex;
     animation: delai 1s ease-in-out forwards;
@@ -143,29 +140,27 @@ main h1 {
     animation-delay: 1s;
 }
 .contenu {
-    transition: width;
-    transition-duration: 500ms;
-    transition-timing-function: ease-in-out;
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
-    padding-left: 8px;
+    padding-left: 12px;
 }
 .categorie_1 {
+    margin: 20px;
+    min-width: 280px;
     flex : 1 1 0px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
 }
 .categorie_2 {
+    margin: 20px;
+    min-width: 280px;
     flex : 1 1 0px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
 }
 .categorie_3 {
+    margin: 20px;
+    min-width: 280px;
     flex : 1 1 0px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
 }
 
 @keyframes delai {
@@ -179,9 +174,9 @@ main h1 {
     }
 }
 .confirmation {
-    margin-right: -60px;
+    margin-right: -80px;
     transition-duration: 0.5s;
-    width: 60px;
+    width: 80px;
     background-color: $couleur-tertiaire;
     display: flex;
     justify-content: center;
@@ -206,7 +201,7 @@ main h1 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 100%;
+    width: 85%;
     height: 40%;
     margin: 0px;
 }
@@ -298,17 +293,6 @@ footer a {
     }
     footer {
         padding-left: 20%;
-    }
-}
-@media all and (min-width : 530px ) and (max-width : 780px) {
-    .categorie_1 {
-        flex: 0.65 1 0px;
-    }
-    .categorie_2 {
-        flex: 0.65 1 0px;
-    }
-    .categorie_3 {
-        flex: 0.65 1 0px;
     }
 }
 
