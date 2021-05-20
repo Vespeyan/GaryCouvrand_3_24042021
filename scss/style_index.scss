@@ -242,7 +242,7 @@ header {
 }
 .restaurant .fas {
     background: -webkit-linear-gradient($couleur-secondaire, $couleur-primaire);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 21px;
     transition: 0.5s ease-in-out;
