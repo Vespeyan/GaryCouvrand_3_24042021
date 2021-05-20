@@ -235,8 +235,6 @@ main h1 {
 .menu:hover .confirmation__icone {
     transform: rotate(0);
 }
-.menu:hover > .contenu {
-}
 
 .commander {
     display: block;
@@ -303,7 +301,13 @@ footer a {
     }
 }
 @media all and (min-width : 530px ) and (max-width : 780px) {
-    .categorie {
+    .categorie_1 {
+        flex: 0.65 1 0px;
+    }
+    .categorie_2 {
+        flex: 0.65 1 0px;
+    }
+    .categorie_3 {
         flex: 0.65 1 0px;
     }
 }
